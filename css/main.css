@@ -2,5 +2,65 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-01 20:20:46
+* @Last Modified time: 2020-05-02 23:52:25
 */
+
+/**
+ * 公共样式
+ */
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+@font-face {
+    font-family: "weijinsuo";
+    src: url("../font/MiFie-Web-Font.eot") format("embedded-opentype"), url("../font/MiFie-Web-Font.svg") format("svg"), url("../font/MiFie-Web-Font.ttf") format("truetype"), url("../font/MiFie-Web-Font.woff") format("woff");
+}
+/**
+ * /公共样式
+ */
+
+/**
+ * 头部区域
+ */
+
+#header {
+    height: 200px;
+    background-color: #f0f0f0;
+}
+
+#header > .topbar {
+	height: 40px;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#header > .topbar > .comtainer > .row > div{
+	height: 40px;
+	color: hotpink;
+}
+/**
+ * /头部区域
+ */
+
+/**
+ * 脚注区域
+ */
+
+/**
+ * /脚注区域
+ */
+
+/**
+ * 测试样式
+ */
+
+section {
+    height: 200px;
+    background-color: #fff;
+}
+section:nth-of-type(2n) {
+    background-color: #f5f5f5;
+}
+/**
+ * /测试样式
+ */
