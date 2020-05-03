@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-03 21:40:27
+* @Last Modified time: 2020-05-03 23:02:02
 */
 
 /**
@@ -31,6 +31,14 @@ body {
 .icon-telephone::before{
   content: "\e909";
   font-size: 15px;
+}
+
+.icon-logo::before{
+  content: "\e93e"
+}
+
+.icon-icon::before{
+  content: "\e920"
 }
 /**
  * /公共样式
@@ -83,6 +91,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 28px;
+  z-index: 1001;
 }
 
 #header .mobile-link:hover {
@@ -91,6 +100,28 @@ body {
 
 #header .mobile-link:hover > img {
   display: block;
+}
+
+#header .icon-icon {
+
+font-size: 50px;
+
+color: #E92322;
+
+line-height: 50px;
+
+vertical-align: middle;
+}
+
+#header .icon-logo {
+  
+font-size: 32px;
+  
+color: #333;
+  
+line-height: 50px;
+  
+vertical-align: middle;
 }
 
 /**
@@ -175,6 +206,7 @@ fieldset[disabled] .btn-weijinsuo.active {
 }
 .navbar-weijinsuo .navbar-brand {
   color: #777;
+  height:80px;
 }
 .navbar-weijinsuo .navbar-brand:hover,
 .navbar-weijinsuo .navbar-brand:focus {
@@ -186,17 +218,21 @@ fieldset[disabled] .btn-weijinsuo.active {
 }
 .navbar-weijinsuo .navbar-nav > li > a {
   color: #777;
+  line-height: 48px;
+  font-size: 14px;
 }
 .navbar-weijinsuo .navbar-nav > li > a:hover,
 .navbar-weijinsuo .navbar-nav > li > a:focus {
   color: #333;
   background-color: transparent;
+  border-bottom: 2px solid #E92322;
 }
 .navbar-weijinsuo .navbar-nav > .active > a,
 .navbar-weijinsuo .navbar-nav > .active > a:hover,
 .navbar-weijinsuo .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #e7e7e7;
+  background-color: #fff;
+  border-bottom: 2px solid #E92322;
 }
 .navbar-weijinsuo .navbar-nav > .disabled > a,
 .navbar-weijinsuo .navbar-nav > .disabled > a:hover,
@@ -206,6 +242,8 @@ fieldset[disabled] .btn-weijinsuo.active {
 }
 .navbar-weijinsuo .navbar-toggle {
   border-color: #ddd;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 .navbar-weijinsuo .navbar-toggle:hover,
 .navbar-weijinsuo .navbar-toggle:focus {

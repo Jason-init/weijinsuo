@@ -17,7 +17,7 @@
  <body>
    <!-- 头部区域 -->
    <header id="header">
-    <div class="topbar">
+    <div class="topbar visible-md visible-lg">
       <div class="container">
         <div class="row">
           <div class="col-md-2 text-center">
@@ -46,21 +46,30 @@
     <nav class="navbar navbar-weijinsuo navbar-static-top">
       <div class="container">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">
-            微金所
+            <i class="icon-icon"></i>
+            <i class="icon-logo"></i>
           </a>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#">我要投资</a></li>
-          <li><a href="#">我要借款</a></li>
-          <li><a href="#">平台介绍</a></li>
-          <li><a href="#">新手专区</a></li>
-          <li><a href="#">最新动态</a></li>
-          <li><a href="#">微论坛</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">个人中心</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="nav_list">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">我要投资</a></li>
+            <li><a href="#">我要借款</a></li>
+            <li><a href="#">平台介绍</a></li>
+            <li><a href="#">新手专区</a></li>
+            <li><a href="#">最新动态</a></li>
+            <li><a href="#">微论坛</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right hidden-sm">
+            <li><a href="#">个人中心</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
