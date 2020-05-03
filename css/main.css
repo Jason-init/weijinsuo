@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-03 17:07:16
+* @Last Modified time: 2020-05-03 21:40:27
 */
 
 /**
@@ -10,27 +10,27 @@
  */
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
 }
 
 @font-face {
-    font-family: "weijinsuo";
-    src: url("../font/MiFie-Web-Font.eot") format("embedded-opentype"), url("../font/MiFie-Web-Font.svg") format("svg"), url("../font/MiFie-Web-Font.ttf") format("truetype"), url("../font/MiFie-Web-Font.woff") format("woff");
+  font-family: "weijinsuo";
+  src: url("../font/MiFie-Web-Font.eot") format("embedded-opentype"), url("../font/MiFie-Web-Font.svg") format("svg"), url("../font/MiFie-Web-Font.ttf") format("truetype"), url("../font/MiFie-Web-Font.woff") format("woff");
 }
 
 [class^="icon-"], [class*=" icon-"]{
-    font-family: weijinsuo;
-    font-style: normal;
+  font-family: weijinsuo;
+  font-style: normal;
 }
 
 .icon-mobilephone::before{
-    content: "\e908";
-    font-size: 13px;
+  content: "\e908";
+  font-size: 13px;
 }
 
 .icon-telephone::before{
-    content: "\e909";
-    font-size: 15px;
+  content: "\e909";
+  font-size: 15px;
 }
 /**
  * /公共样式
@@ -41,45 +41,56 @@ body {
  */
 
 #header {
-    height: 200px;
-    background-color: #f0f0f0;
+  height: 200px;
 }
 
 #header > .topbar {
-	height: 40px;
-	border-bottom: 1px solid #c0c0c0;
-  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #c0c0c0;
+  line-height: 40px; 
+}
+
+#header > .topbar > .container > .row > div {
+  height: 40px;
   font-size: 12px;
   color: #888;
 }
 
-#header > .topbar > .container > .row > div {
-    height: 40px;
+#header > .topbar > .container > .row > div + div {
+  border-left: 1px solid #c0c0c0;
 }
 
-#header > .topbar > .container > .row > div + div {
-    border-left: 1px solid #c0c0c0;
+#header a {
+  color: #888
+}
+
+#header a:hover {
+  text-decoration:none;
+}
+
+#header .btn-weijinsuo {
+  color: #fff;
 }
 
 #header .mobile-link {
-    font-size: 12px;
-    color: #888;
+  font-size: 12px;
+  color: #888;
 }
 
 #header .mobile-link > img {
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 28px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 28px;
 }
 
 #header .mobile-link:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #header .mobile-link:hover > img {
-    display: block;
+  display: block;
 }
 
 /**
@@ -98,13 +109,13 @@ body {
  * 测试样式
  */
 
-section {
-    height: 200px;
-    background-color: #fff;
+/* section {
+  height: 200px;
+  background-color: #fff;
 }
 section:nth-of-type(2n) {
-    background-color: #f5f5f5;
-}
+  background-color: #f5f5f5;
+  }*/
 /**
  * /测试样式
  */
@@ -162,77 +173,57 @@ fieldset[disabled] .btn-weijinsuo.active {
   background-color: #fff;
   border-color: #f5f5f5;
 }
-
 .navbar-weijinsuo .navbar-brand {
   color: #777;
-  height: 80px;
 }
-
 .navbar-weijinsuo .navbar-brand:hover,
 .navbar-weijinsuo .navbar-brand:focus {
   color: #5e5e5e;
   background-color: transparent;
 }
-
 .navbar-weijinsuo .navbar-text {
   color: #777;
 }
-
 .navbar-weijinsuo .navbar-nav > li > a {
   color: #777;
-  line-height: 48px;
-  font-size: 14px;
 }
-
 .navbar-weijinsuo .navbar-nav > li > a:hover,
 .navbar-weijinsuo .navbar-nav > li > a:focus {
   color: #333;
   background-color: transparent;
-  border-bottom: 2px solid #e92322;
 }
-
 .navbar-weijinsuo .navbar-nav > .active > a,
 .navbar-weijinsuo .navbar-nav > .active > a:hover,
 .navbar-weijinsuo .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: transparent;
-  border-bottom: 2px solid #E92322;
+  background-color: #e7e7e7;
 }
-
 .navbar-weijinsuo .navbar-nav > .disabled > a,
 .navbar-weijinsuo .navbar-nav > .disabled > a:hover,
 .navbar-weijinsuo .navbar-nav > .disabled > a:focus {
   color: #ccc;
   background-color: transparent;
 }
-
 .navbar-weijinsuo .navbar-toggle {
   border-color: #ddd;
-  margin-top: 23px;
-  margin-bottom: 23px;
 }
-
 .navbar-weijinsuo .navbar-toggle:hover,
 .navbar-weijinsuo .navbar-toggle:focus {
   background-color: #ddd;
 }
-
 .navbar-weijinsuo .navbar-toggle .icon-bar {
   background-color: #888;
 }
-
 .navbar-weijinsuo .navbar-collapse,
 .navbar-weijinsuo .navbar-form {
   border-color: #e7e7e7;
 }
-
 .navbar-weijinsuo .navbar-nav > .open > a,
 .navbar-weijinsuo .navbar-nav > .open > a:hover,
 .navbar-weijinsuo .navbar-nav > .open > a:focus {
   color: #555;
   background-color: #e7e7e7;
 }
-
 @media (max-width: 767px) {
   .navbar-weijinsuo .navbar-nav .open .dropdown-menu > li > a {
     color: #777;
@@ -255,24 +246,19 @@ fieldset[disabled] .btn-weijinsuo.active {
     background-color: transparent;
   }
 }
-
 .navbar-weijinsuo .navbar-link {
   color: #777;
 }
-
 .navbar-weijinsuo .navbar-link:hover {
   color: #333;
 }
-
 .navbar-weijinsuo .btn-link {
   color: #777;
 }
-
 .navbar-weijinsuo .btn-link:hover,
 .navbar-weijinsuo .btn-link:focus {
   color: #333;
 }
-
 .navbar-weijinsuo .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-weijinsuo .btn-link:hover,
 .navbar-weijinsuo .btn-link[disabled]:focus,
