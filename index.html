@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
   <meta charset="UTF-8">
@@ -15,7 +15,7 @@
  </head>
 
  <body>
-   <!-- 头部区域 -->
+   <!-- 头部区域!!! -->
    <header id="header">
     <div class="topbar visible-md visible-lg">
       <div class="container">
@@ -75,7 +75,39 @@
   </header>
   <!-- /头部区域 -->
   <!-- 广告轮播 -->
-  <section id="main_ad"></section>
+  <section id="main_ad" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+      <li data-target="#main_ad" data-slide-to="1"></li>
+      <li data-target="#main_ad" data-slide-to="2"></li>
+      <li data-target="#main_ad" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" style="background-image: url('img/slide_01_2000x410.jpg');">      
+      </div>
+      <div class="item" style="background-image: url('img/slide_02_2000x410.jpg');">
+      </div>
+      <div class="item" style="background-image: url('img/slide_03_2000x410.jpg');">
+      </div>
+      <div class="item" style="background-image: url('img/slide_04_2000x410.jpg');"> 
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    
+  </section>
   <!-- /广告轮播 -->
   <!-- 特色介绍 -->
   <section></section>
