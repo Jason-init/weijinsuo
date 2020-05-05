@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-05 16:29:54
+* @Last Modified time: 2020-05-05 21:47:56
 */
 
 /**
@@ -181,14 +181,62 @@ body {
     border-bottom: 1px dashed #e92322;
 }
 
-#reserve>.container>.pull-left> a:hover {
+#reserve>.container>.pull-left>a:hover,
+#reserve>.container>.pull-right>a:hover {
     text-decoration:none;
+}
+
+#reserve>.container>.pull-right>a {
+    color: #888;
 }
 
 /**
  * /立即预约
  */
 
+/**
+ * 产品推荐
+ */
+
+#products {
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+#products>.container>.nav-tabs {
+    padding-left: 20px;
+}
+
+#products>.container>.nav-tabs>li {}
+
+#products>.container>.nav-tabs>li>a {
+    font-size: 16px;
+    color: #333;
+}
+
+#products>.container>.nav-tabs>li>a:hover {
+    border-color: transparent;
+    background-color: transparent;
+    color: #000;
+}
+
+#products>.container>.nav-tabs>.active {}
+
+#products>.container>.nav-tabs>.active>a {
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 4px solid #E92322;
+}
+
+#products>.container>.nav-tabs>.active>a:hover {
+    border-bottom: 4px solid #E92322;
+}
+
+
+
+
+/**
+ * /产品推荐
+ */
 /**
  * 脚注区域
  */
