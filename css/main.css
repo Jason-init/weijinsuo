@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-05 12:22:29
+* @Last Modified time: 2020-05-05 12:45:47
 */
 
 /**
@@ -133,6 +133,13 @@ body {
 #tese {
     padding: 50px 0;
     border-bottom: 1px solid #c0c0c0;
+}
+#tese a {
+    color: #888;
+}
+#tese a:hover {
+    text-decoration: none;
+    color: #E92322;
 }
 #tese i {
     font-size: 34px;
