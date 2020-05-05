@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-04 19:46:48
+* @Last Modified time: 2020-05-05 09:15:30
 */
 
 /**
@@ -132,10 +132,19 @@ vertical-align: middle;
 }
 
 #main_ad > .carousel-inner > .item {
-  height: 410px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  #main_ad > .carousel-inner > .item {
+    height: 410px;
+  }
+}
+
+#main_ad > .carousel-inner > .item > img {
+  width: 100%;
 }
 
 /**
