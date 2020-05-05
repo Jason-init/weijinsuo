@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-05 12:45:47
+* @Last Modified time: 2020-05-05 16:29:54
 */
 
 /**
@@ -36,6 +36,12 @@ body {
 }
 .icon-uniE907::before {
     content: "\e907";
+}
+.icon-uniE906::before {
+    content: "\e906";
+}
+.icon-uniE905::before {
+    content: "\e905";
 }
 /**
  * /公共样式
@@ -150,6 +156,37 @@ body {
 }
 /**
  * /网站特色
+ */
+
+/**
+ *  立即预约
+ */
+
+#reserve {
+    border-bottom: 1px solid #c0c0c0;
+    padding: 20px 0;
+}
+
+#reserve>.container>p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+#reserve>.container>.pull-left>span {
+    color: #E92322;
+}
+
+#reserve>.container>.pull-left> a {
+    color: #E92322;
+    border-bottom: 1px dashed #e92322;
+}
+
+#reserve>.container>.pull-left> a:hover {
+    text-decoration:none;
+}
+
+/**
+ * /立即预约
  */
 
 /**
