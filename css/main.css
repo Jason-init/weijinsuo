@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-06 16:40:28
+* @Last Modified time: 2020-05-06 17:34:40
 */
 
 /**
@@ -256,6 +256,31 @@ body {
     font-size: 50px;
     top: -11px;
     left: 15px;
+}
+
+.panel-weijinsuo>.panel-heading{
+    line-height: 14px;
+    font-size: 14px;
+}
+.panel-weijinsuo>.panel-heading>p {
+    padding-top: 50px;
+    margin-bottom: 0;
+}
+.panel-weijinsuo>.panel-heading>p>strong {
+    font-size: 40px;
+}
+.panel-weijinsuo>.panel-heading>p>sub {}
+.panel-weijinsuo>.panel-heading>p>span {
+    /* padding-top: 0; */
+}
+.panel-weijinsuo>.panel-heading>p:nth-of-type(2) {
+    padding-top: 15px;
+}
+.panel-weijinsuo>.panel-body p {
+    margin-bottom: 0;
+}
+.panel-weijinsuo>.panel-body h4 {
+    margin-left: 25px;
 }
 /**
  * /产品推荐
