@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-05 21:47:56
+* @Last Modified time: 2020-05-06 16:40:28
 */
 
 /**
@@ -166,30 +166,23 @@ body {
     border-bottom: 1px solid #c0c0c0;
     padding: 20px 0;
 }
-
 #reserve>.container>p {
     font-size: 14px;
     margin-bottom: 0;
 }
-
 #reserve>.container>.pull-left>span {
     color: #E92322;
 }
-
-#reserve>.container>.pull-left> a {
+#reserve>.container>.pull-left>a {
     color: #E92322;
     border-bottom: 1px dashed #e92322;
 }
-
-#reserve>.container>.pull-left>a:hover,
-#reserve>.container>.pull-right>a:hover {
-    text-decoration:none;
+#reserve>.container>.pull-left>a:hover, #reserve>.container>.pull-right>a:hover {
+    text-decoration: none;
 }
-
 #reserve>.container>.pull-right>a {
     color: #888;
 }
-
 /**
  * /立即预约
  */
@@ -205,38 +198,69 @@ body {
 #products>.container>.nav-tabs {
     padding-left: 20px;
 }
-
 #products>.container>.nav-tabs>li {}
-
 #products>.container>.nav-tabs>li>a {
     font-size: 16px;
     color: #333;
 }
-
 #products>.container>.nav-tabs>li>a:hover {
     border-color: transparent;
     background-color: transparent;
     color: #000;
 }
-
 #products>.container>.nav-tabs>.active {}
-
 #products>.container>.nav-tabs>.active>a {
     background-color: transparent;
     border-color: transparent;
     border-bottom: 4px solid #E92322;
 }
-
 #products>.container>.nav-tabs>.active>a:hover {
     border-bottom: 4px solid #E92322;
 }
-
-
-
-
+#products>.container>.tab-content {
+    padding: 20px 0;
+}
+.panel-weijinsuo>.panel-body {
+    margin-right: 120px;
+    height: 150px;
+}
+.panel-weijinsuo>.panel-heading::before, .panel-weijinsuo>.panel-heading::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    position: absolute;
+}
+.panel-weijinsuo>.panel-heading::before {
+    top: -8px;
+    left: -8px;
+    box-shadow: 0 -2px 1px #ccc inset;
+}
+.panel-weijinsuo>.panel-heading::after {
+    bottom: -8px;
+    left: -8px;
+    box-shadow: 0px 2px 1px #ccc inset;
+}
+.panel-weijinsuo.active {
+    background-color: #e92322;
+    color: #fff;
+}
+.panel-weijinsuo.disable {
+    background-color: #e0e0e0;
+}
+.panel-weijinsuo.active::before {
+    font-family: weijinsuo;
+    content: "\e915";
+    position: absolute;
+    font-size: 50px;
+    top: -11px;
+    left: 15px;
+}
 /**
  * /产品推荐
  */
+
 /**
  * 脚注区域
  */
@@ -370,6 +394,31 @@ section:nth-of-type(2n) {
 }
 .navbar-weijinsuo .btn-link[disabled]:hover, fieldset[disabled] .navbar-weijinsuo .btn-link:hover, .navbar-weijinsuo .btn-link[disabled]:focus, fieldset[disabled] .navbar-weijinsuo .btn-link:focus {
     color: #ccc;
+}
+.panel-weijinsuo {
+    border-color: #ddd;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 1px 1px 5px #ccc;
+}
+.panel-weijinsuo>.panel-heading {
+    float: right;
+    width: 120px;
+    padding: 0;
+    height: 150px;
+    border-left: 1px dashed #c0c0c0;
+    text-align: center;
+    position: relative;
+}
+.panel-weijinsuo>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #ddd;
+}
+.panel-weijinsuo>.panel-heading .badge {
+    color: #f5f5f5;
+    background-color: #333;
+}
+.panel-weijinsuo>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #ddd;
 }
 /**
  * /bootstap扩展
