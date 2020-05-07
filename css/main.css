@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-06 17:34:40
+* @Last Modified time: 2020-05-07 17:48:20
 */
 
 /**
@@ -262,8 +262,12 @@ body {
     line-height: 14px;
     font-size: 14px;
 }
-.panel-weijinsuo>.panel-heading>p {
-    padding-top: 50px;
+.panel-weijinsuo>.panel-heading>p+p {
+    padding-top: 61px;
+    margin-bottom: 0;
+}
+.panel-weijinsuo>.panel-heading>p+p {
+    padding-top: 61px;
     margin-bottom: 0;
 }
 .panel-weijinsuo>.panel-heading>p>strong {
@@ -273,8 +277,35 @@ body {
 .panel-weijinsuo>.panel-heading>p>span {
     /* padding-top: 0; */
 }
-.panel-weijinsuo>.panel-heading>p:nth-of-type(2) {
+.panel-weijinsuo>.panel-heading>p:nth-of-type(3) {
     padding-top: 15px;
+}
+.panel-weijinsuo>.panel-heading>.tooltips{
+    position: absolute;
+    width: 100%;
+    top: 26px;
+}
+.panel-weijinsuo>.panel-heading>.tooltips>.badge{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 3px;
+}
+.panel-weijinsuo>.panel-heading>.tooltips>.badge-one{
+    color: #e92322;
+    border-color: #e92322;
+}
+.panel-weijinsuo.active>.panel-heading>.tooltips>.badge-one{
+    color: #fff;
+    border-color: #fff;
+}
+.panel-weijinsuo>.panel-heading>.tooltips>.badge-two{
+    color: #399;
+    border-color: #399;
 }
 .panel-weijinsuo>.panel-body p {
     margin-bottom: 0;
@@ -439,8 +470,8 @@ section:nth-of-type(2n) {
     border-top-color: #ddd;
 }
 .panel-weijinsuo>.panel-heading .badge {
-    color: #f5f5f5;
-    background-color: #333;
+    /*color: #f5f5f5;
+    background-color: #333;*/
 }
 .panel-weijinsuo>.panel-footer+.panel-collapse>.panel-body {
     border-bottom-color: #ddd;
