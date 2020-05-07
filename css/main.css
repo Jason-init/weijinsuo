@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-07 17:48:20
+* @Last Modified time: 2020-05-07 20:25:47
 */
 
 /**
@@ -195,26 +195,29 @@ body {
     padding: 40px 0;
     background-color: #f0f0f0;
 }
-#products>.container>.nav-tabs {
+#products>.container>.ul-wrapper{
+    overflow-x: scroll;
+}
+#products>.container>.ul-wrapper>.nav-tabs {
     padding-left: 20px;
 }
-#products>.container>.nav-tabs>li {}
-#products>.container>.nav-tabs>li>a {
+#products>.container>.ul-wrapper>.nav-tabs>li {}
+#products>.container>.ul-wrapper>.nav-tabs>li>a {
     font-size: 16px;
     color: #333;
 }
-#products>.container>.nav-tabs>li>a:hover {
+#products>.container>.ul-wrapper>.nav-tabs>li>a:hover {
     border-color: transparent;
     background-color: transparent;
     color: #000;
 }
-#products>.container>.nav-tabs>.active {}
-#products>.container>.nav-tabs>.active>a {
+#products>.container>.ul-wrapper>.nav-tabs>.active {}
+#products>.container>.ul-wrapper>.nav-tabs>.active>a {
     background-color: transparent;
     border-color: transparent;
     border-bottom: 4px solid #E92322;
 }
-#products>.container>.nav-tabs>.active>a:hover {
+#products>.container>.ul-wrapper>.nav-tabs>.active>a:hover {
     border-bottom: 4px solid #E92322;
 }
 #products>.container>.tab-content {
@@ -261,10 +264,6 @@ body {
 .panel-weijinsuo>.panel-heading{
     line-height: 14px;
     font-size: 14px;
-}
-.panel-weijinsuo>.panel-heading>p+p {
-    padding-top: 61px;
-    margin-bottom: 0;
 }
 .panel-weijinsuo>.panel-heading>p+p {
     padding-top: 61px;
