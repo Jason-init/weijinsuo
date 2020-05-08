@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-07 20:25:47
+* @Last Modified time: 2020-05-08 16:55:18
 */
 
 /**
@@ -194,9 +194,6 @@ body {
 #products {
     padding: 40px 0;
     background-color: #f0f0f0;
-}
-#products>.container>.ul-wrapper{
-    overflow-x: scroll;
 }
 #products>.container>.ul-wrapper>.nav-tabs {
     padding-left: 20px;
