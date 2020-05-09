@@ -2,7 +2,7 @@
  * @Author: QiZhang
  * @Date:   2020-05-01 20:21:11
  * @Last Modified by:   QiZhang
- * @Last Modified time: 2020-05-08 16:57:37
+ * @Last Modified time: 2020-05-09 20:38:23
  */
 $(function() {
     function resize() {
@@ -18,7 +18,9 @@ $(function() {
         })
     }
     $(window).on('resize', resize).trigger('resize')
+
     $('[data-toggle="tooltip"]').tooltip()
+
     var width = 30
     $('.ul-wrapper > .nav-tabs').children().each(function(i, item) {
         width += $(item).width()
@@ -26,4 +28,9 @@ $(function() {
     if ($(window).width() < width) {
         $('.ul-wrapper > .nav-tabs').css('width', width).parent().css('overflow-x', 'scroll')
     }
+
+    $('#news .nav-pills a').on('click', function () {
+        var title = $(this).data('title')
+        $('#news .news-title').text(title)
+    })
 })
