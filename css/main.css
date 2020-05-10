@@ -2,7 +2,7 @@
 * @Author: QiZhang
 * @Date:   2020-05-01 20:20:46
 * @Last Modified by:   QiZhang
-* @Last Modified time: 2020-05-09 21:46:58
+* @Last Modified time: 2020-05-10 16:10:00
 */
 
 /**
@@ -207,6 +207,9 @@
  */
 
  #main_ad {}
+ #main_ad>.carousel-inner{
+  
+ }
  #main_ad>.carousel-inner>.item {
   background-repeat: no-repeat;
   background-position: center center;
@@ -495,9 +498,9 @@
  * 脚注区域
  */
 
- footer {
+/* footer {
   height: 200px;
-}
+}*/
 
 /**
  * /脚注区域
@@ -541,6 +544,8 @@
   background-color: #fff;
   border-color: #f5f5f5;
   margin-bottom: 0;
+  top: 0;
+  width: 100%;
 }
 .navbar-weijinsuo .navbar-brand {
   color: #777;
